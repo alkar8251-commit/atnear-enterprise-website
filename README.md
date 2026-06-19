@@ -80,8 +80,8 @@
 
 <section>
     <h2>Contact Us</h2>
-    <p>Phone: Your Phone Number</p>
-    <p>Email: your@email.com</p>
+    <p>Phone: 6047824664</p>
+    <p>Email: alkar8251@gmail.com</p>
 </section>
 
 <footer>
