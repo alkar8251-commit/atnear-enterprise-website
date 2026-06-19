@@ -81,7 +81,7 @@
 <section>
     <h2>Contact Us</h2>
     <p>Phone: 6047824664</p>
-    <p>Email: alkar8251@gmail.com</p>
+    <p>Email: pankaj.verma1249@gmail.com</p>
 </section>
 
 <footer>
