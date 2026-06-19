@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -23,42 +23,45 @@
     header h1 {
         font-size: 40px;
         margin: 0;
-        letter-spacing: 2px;
     }
 
     header p {
-        color: #bbbbbb;
-        margin-top: 10px;
-        font-size: 18px;
+        color: #bbb;
     }
 
     .btn {
         display: inline-block;
-        margin-top: 20px;
-        padding: 12px 20px;
+        margin-top: 15px;
+        padding: 12px 18px;
         background: white;
         color: black;
         text-decoration: none;
         font-weight: bold;
-        border-radius: 5px;
+        border-radius: 6px;
+        margin-right: 10px;
+    }
+
+    .btn-dark {
+        background: #222;
+        color: white;
+        border: 1px solid #444;
     }
 
     section {
         padding: 50px 20px;
-        max-width: 1100px;
+        max-width: 1000px;
         margin: auto;
     }
 
     h2 {
         text-align: center;
-        margin-bottom: 30px;
-        color: #ffffff;
+        margin-bottom: 25px;
     }
 
     .services {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
     }
 
     .card {
@@ -68,13 +71,44 @@
         border: 1px solid #333;
     }
 
-    .card h3 {
-        color: white;
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
     }
 
-    .card p {
-        color: #bbbbbb;
-        font-size: 14px;
+    .img-box {
+        background: #222;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #777;
+        border-radius: 10px;
+        border: 1px dashed #444;
+    }
+
+    form {
+        display: grid;
+        gap: 10px;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    input, textarea {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    button {
+        padding: 12px;
+        background: white;
+        color: black;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 6px;
     }
 
     .contact {
@@ -84,76 +118,78 @@
         border-top: 1px solid #333;
     }
 
-    .contact p {
-        margin: 8px 0;
-        color: #ccc;
-    }
-
     footer {
         text-align: center;
         padding: 20px;
         background: black;
         color: #666;
-        font-size: 14px;
     }
 
-    .highlight {
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25D366;
         color: white;
+        padding: 14px 16px;
+        border-radius: 50px;
+        text-decoration: none;
         font-weight: bold;
     }
-</style>
 
+    .license-box {
+        background: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #333;
+        max-width: 800px;
+        margin: auto;
+        color: #ddd;
+    }
+
+    .license-box strong {
+        color: white;
+    }
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>ATNEAR ENTERPRISE LTD.</h1>
-    <p>Professional Cleaning & Cleanup Services</p>
+    <p>Professional Cleaning & Cleanup Services in Metro Vancouver</p>
+
     <a class="btn" href="tel:6047824664">Call Now</a>
+    <a class="btn btn-dark" href="#quote">Get Free Quote</a>
 </header>
 
 <section>
     <h2>Our Services</h2>
 
     <div class="services">
-
-        <div class="card">
-            <h3>Restaurant Cleaning</h3>
-            <p>Deep cleaning for kitchens, dining areas, and commercial food spaces.</p>
-        </div>
-
-        <div class="card">
-            <h3>Store Cleaning</h3>
-            <p>Retail and commercial store cleaning for a professional appearance.</p>
-        </div>
-
-        <div class="card">
-            <h3>Office Cleaning</h3>
-            <p>Reliable office maintenance and workspace cleaning.</p>
-        </div>
-
-        <div class="card">
-            <h3>Post Construction Cleanup</h3>
-            <p>Dust, debris, and full cleanup after construction or renovation.</p>
-        </div>
-
-        <div class="card">
-            <h3>Garbage Removal</h3>
-            <p>Junk removal and property cleanup services for all locations.</p>
-        </div>
-
-        <div class="card">
-            <h3>Move In / Move Out</h3>
-            <p>Complete cleaning before or after moving properties.</p>
-        </div>
-
+        <div class="card">Restaurant Cleaning</div>
+        <div class="card">Store Cleaning</div>
+        <div class="card">Office Cleaning</div>
+        <div class="card">Post Construction Cleanup</div>
+        <div class="card">Garbage Removal</div>
+        <div class="card">Move In / Move Out Cleaning</div>
     </div>
 </section>
+
+<section>
+    <h2>Before / After Work</h2>
+
+    <div class="gallery">
+        <div class="img-box">Before / After Image</div>
+        <div class="img-box">Before / After Image</div>
+        <div class="img-box">Before / After Image</div>
+    </div>
+</section>
+
 <section>
     <h2>Business License & Registration</h2>
 
-    <div class="card" style="max-width: 800px; margin: auto; background:#1a1a1a; padding:20px; border-radius:10px; border:1px solid #333;">
+    <div class="license-box">
         <p>
             <strong>ATNEAR ENTERPRISE LTD</strong> (operating as ATNEAR ENTERPRISE) is a registered business in Burnaby, licensed by the Licence Office of the City of Burnaby.
         </p>
@@ -166,28 +202,39 @@
         </p>
 
         <p>
-            <strong>Registered Business Address:</strong><br>
+            <strong>Registered Address:</strong><br>
             4675 Imperial St, Unit #216, Burnaby, BC
         </p>
     </div>
 </section>
+
+<section id="quote">
+    <h2>Request a Free Quote</h2>
+
+    <form action="mailto:pankaj.verma1249@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="service" placeholder="Service Needed" required>
+        <textarea name="message" placeholder="Describe your job..." rows="5"></textarea>
+        <button type="submit">Send Request</button>
+    </form>
+</section>
+
 <section class="contact">
     <h2>Contact Us</h2>
-
-    <p><span class="highlight">Phone:</span> 604-782-4664</p>
-    <p><span class="highlight">Email:</span> pankaj.verma1249@gmail.com</p>
-    <p><span class="highlight">Service Areas:</span> Burnaby, Surrey, Vancouver, Richmond, New Westminster & nearby areas</p>
-
-    <a class="btn" href="mailto:alkar8251@gmail.com">Email Us</a>
+    <p>📞 604-782-4664</p>
+    <p>✉️ pankaj.verma1249@gmail.com</p>
+    <p>📍 Burnaby • Surrey • Vancouver • Richmond • New Westminster</p>
 </section>
 
-        </p>
-    </div>
-</section>
 <footer>
-    © 2026 ATNEAR ENTERPRISE LTD. All rights reserved.
-    
+    © 2026 ATNEAR ENTERPRISE LTD.
 </footer>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/16047824664" target="_blank">
+    WhatsApp
+</a>
 
 </body>
 </html>
